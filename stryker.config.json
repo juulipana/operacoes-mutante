@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "_comment": "This config was generated using 'stryker init'. Please see the guide for more information: https://stryker-mutator.io/docs/stryker-js/guides/angular",
+  "mutate": [
+    "src/**/*.js",
+    "!src/**/*.spec.js",
+    "!src/test.js",
+    "!src/environmenjs/*.js"
+  ],
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "ignorers": [
+    "angular"
+  ],
+  "concurrency": 8,
+  "coverageAnalysis": "perTest"
+}
